@@ -31,7 +31,7 @@ async function handleSend() {
     </header>
 
     <main class="chat">
-      <div v-if="messages.length === 0" class="empty">开始和 Agent 对话吧</div>
+      <div v-if="messages.length === 0" class="empty">开始和 Agent 对话吧！</div>
       <div v-for="(m, i) in messages" :key="i" class="row" :class="m.role">
         <div class="bubble">{{ m.content }}</div>
       </div>
